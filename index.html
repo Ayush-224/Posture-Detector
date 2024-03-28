@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Posture detector</title>
+    <style>
+        body{
+            position: relative;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.938); 
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .heading{
+            text-transform: uppercase;
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #frame-container{
+            border: 5px solid white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <div class="header">
+    <h1 class="heading">Posture Detector</h1></div>
+
+    <div id="frame-container">
+    </div>
+</body>
+</html>
